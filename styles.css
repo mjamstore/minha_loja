@@ -1,0 +1,309 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background: #f4f7fc;
+  color: #2c3e50;
+  line-height: 1.65;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+a:hover,
+a:focus {
+  color: #0d6efd;
+  outline: none;
+}
+
+/* Container centralizado */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1.5rem 1.75rem;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #0066ff, #3399ff);
+  color: white;
+  padding: 4rem 1.75rem 4.5rem;
+  text-align: center;
+  border-radius: 0 0 1.5rem 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 102, 255, 0.3);
+}
+header h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+header p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Botão WhatsApp */
+.btn-whatsapp {
+  background: #25d366;
+  color: white;
+  padding: 0.9rem 2.4rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  display: inline-block;
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.45);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
+  background: #1aaa4c;
+  box-shadow: 0 8px 20px rgba(26, 170, 76, 0.6);
+  outline: none;
+}
+
+/* Seções */
+section {
+  padding: 3.5rem 0;
+}
+h2 {
+  text-align: center;
+  color: #0d6efd;
+  margin-bottom: 2.5rem;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(13, 110, 253, 0.25);
+}
+
+/* Como funciona - passos */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.step {
+  background: white;
+  padding: 2rem 1.5rem;
+  flex: 1 1 280px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+.step:hover,
+.step:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+.step h3 {
+  margin-bottom: 1rem;
+  color: #0d6efd;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.step p {
+  font-size: 1rem;
+  color: #555d66;
+  line-height: 1.45;
+}
+
+/* Modelos de camisetas */
+.models {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+.model {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 1.8rem 1.5rem 2rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.model:hover,
+.model:focus-within {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+.model img {
+  max-width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1.3rem;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.07));
+}
+.model h3 {
+  margin-bottom: 0.6rem;
+  color: #0d6efd;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.model p {
+  color: #4a4a4a;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+.model .price {
+  font-weight: 700;
+  color: #28a745;
+  font-size: 1.2rem;
+}
+
+/* Tipos de estampa */
+.prints {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  justify-content: center;
+}
+.print {
+  background: white;
+  padding: 1.8rem 1.4rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+  width: 260px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+.print:hover,
+.print:focus-within {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+.print h4 {
+  color: #0d6efd;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.print p {
+  font-size: 1rem;
+  color: #606060;
+  line-height: 1.5;
+}
+.print .price {
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #28a745;
+  font-size: 1.15rem;
+}
+
+/* Combos */
+.combos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+.combo {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.combo:hover,
+.combo:focus-within {
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.15);
+  transform: translateY(-7px);
+}
+.combo h3 {
+  color: #0d6efd;
+  margin-bottom: 0.7rem;
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+.combo p {
+  color: #585858;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.combo .price {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #28a745;
+}
+
+/* Depoimentos */
+.testimonials {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  color: #4a4a4a;
+}
+.testimonial {
+  background: white;
+  padding: 1.8rem 2.5rem;
+  border-radius: 15px;
+  margin-bottom: 1.3rem;
+  font-style: italic;
+  font-weight: 500;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.testimonial:hover,
+.testimonial:focus-within {
+  background-color: #e6f0ff;
+}
+
+/* CTA final */
+.cta {
+  background: linear-gradient(135deg, #0066ff, #3399ff);
+  color: white;
+  padding: 4rem 1.75rem;
+  text-align: center;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-top: 3rem;
+  box-shadow: 0 -8px 20px rgba(0, 102, 255, 0.3);
+}
+.cta h2 {
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+/* Responsividade básica */
+@media (max-width: 900px) {
+  .steps, .models, .prints, .combos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .step, .model, .print, .combo {
+    width: 100%;
+    max-width: 350px;
+  }
+}
